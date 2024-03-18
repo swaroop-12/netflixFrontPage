@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; ;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("main.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.54;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+ margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height:62px;
+    margin-bottom: 250px;
+    
+    
+}
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+nav img:hover{
+    color: red;
+    width: 300px;
+    position: relative;
+    z-index: 15;
+
+   
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+.hero{
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding:0 30px;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translate(-300px);
+
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.hero h1{
+    font-weight: 700;
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 50px;
+    text-align: center;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+.text h1:before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: orangered;
+    transform-origin: right;
+    transition: 0.5s ease;
+}
+.text h1:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+    animation: slideInLeft 1s ease-in 1s infinite ;
+}
+
+.hero p{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 16px;
+    text-align: center;
+}
+.h3{
+
+    font-size: 20px;
+    text-align: center;
+}
+.search{
+    text-decoration: none;
+}
+.separation{
+    height: 8px;
+    background-color: gray;
+    margin-top: 28vh;
+    position: relative;
+}
+.btn{
+    padding:3px 8px;
+    font-weight: bold;
+   color: white;
+   border-radius: 4px;
+   background-color: rgba(23,23,23,0.2);
+   border: 1px solid white
+  
+
+}
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    border-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    box-shadow: 0 0 5px red , 0 0 25px red ;
+}
+.btn-red-sem{
+    background-color: red;
+    color: white;
+    width: 80px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+.btn-red-sem:hover{
+    background-color: black;
+    color: white;
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px red,0 0 50px red,0 0 100px red,0 0 200px red;
+}
+.main input {
+   
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 20px;
+   border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(246,238,238,0.5);
+    position: relative;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin:auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+   
+}
+.one:hover{
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+
+.sec img{
+    margin-top:50px;
+    width: 30vw;
+
+  
+}
+
+
+.two{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 60vw;
+    margin:auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    
+
+}
+.two:hover{
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+    
+}
+.faq h2{
+    text-align: center;
+    font-size: 38px;
+}
+ 
+.faqbox:hover{
+    background-color: rgb(37,35,36);
+    border: solid 2px white ;
+    border-radius: 20px;
+    background-color: red;
+    box-shadow: 0 0 5px red , 0 0 25px red ;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color:gray;
+    padding: 14px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+    
+}
+.btn-red:hover{
+    background-color: rgb(37,35,36);
+    border: solid 2px white ;
+    border-radius: 20px;
+}
+.last{
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding:35px 30px;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+
+}
+.last input {
+   
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 20px;
+   border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(246,238,238,0.5);
+    position: relative;
+}
+.last input:hover{
+    background-color: rgb(37,35,36);
+    border: solid 2px white ;
+    border-radius: 20px;
+}
+.main input:hover{
+    background-color: rgb(37,35,36);
+    border: solid 2px white ;
+    border-radius: 20px;
+}
+footer {
+    color:white;
+    margin-top: 30px;
+    animation: slideInLeft 1s ease-in 1s 1 ;
+}
+.footer{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+.footer-item{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer span{
+    margin: 2px 30vw;
+    text-align: center;
+    font-size : larger;
+}
+.footer-item a{
+    text-decoration: underline;
+}
+.separation1{
+    height: 8px;
+    background-color: gray;
+    margin-top: 1vh;
+    position: relative;
+}
+@media screen and (max-width:1200px){
+    .one{
+        flex-wrap: wrap;
+
+    }
+    .two{
+        flex-wrap: wrap;
+
+    }
+    .sec img{
+        width: 305px;
+    }
+}
